@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS Animations for SVG Button */
+/* #text {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#rect {
+    stroke-dasharray: 50;
+    animation: move 1s ease-in alternate infinite;
+}
+
+@keyframes move {
+    to {
+        stroke-dashoffset: 130;
+    }
+} */
+
+
+
+/* CSS Animations for SVG logo  */
+
+#rect {
+    stroke-dasharray: 780;
+    stroke-dashoffset: 0;
+    animation: moveRect 3s ease alternate infinite;
+}
+
+@keyframes moveRect {
+    to {
+        stroke-dashoffset: 780;
+    }
+}
+
+#cir {
+    stroke-dasharray: 540;
+    stroke-dashoffset: 0;
+    fill: white;
+    animation: moveCirc 3s ease alternate infinite;
+}
+
+@keyframes moveCirc {
+    100% {
+        stroke-dashoffset: 540;
+        fill: #D138DE;
+    }
+}
+
+#text {
+    opacity: 0;
+    animation: moveText 3s ease alternate infinite;
+}
+
+@keyframes moveText {
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
